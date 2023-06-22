@@ -6,7 +6,7 @@ var gulp  = require( 'gulp' ),
 
 // Zip main theme.
 gulp.task( 'zip', function() {
-	return gulp.src( paths.root.main + '**', { base: 'src/' } )
-	           .pipe( $.zip( paths.mainTheme + '_' + time + '.zip' ) )
+	return gulp.src( paths.root.main + '**', { base: 'docs/' } )
+	           .pipe( $.zip( 'subwallet_' + time + '.zip' ) )
 	           .pipe( gulp.dest( 'dist/themes/' ) );
 } );
