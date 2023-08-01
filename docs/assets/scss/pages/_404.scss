@@ -1,0 +1,48 @@
+.section-404 {
+    padding: 160px 0 120px;
+    margin: 0;
+    background: linear-gradient(180deg, #004BFF 0%, #4CEAAC 100%);
+    text-align: center;
+}
+
+.title-404 {
+    font-size: 100px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.subtitle-404 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+@include media-breakpoint-up(md) {
+    .section-404 {
+        padding: 200px 0 160px;
+    }
+
+    .title-404 {
+        font-size: 120px;
+    }
+
+    .subtitle-404 {
+        font-size: 22px;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .section-404 {
+        padding: 242px 0 160px;
+    }
+
+    .title-404 {
+        font-size: 180px;
+    }
+
+    .subtitle-404 {
+        font-size: 32px;
+    }
+}
