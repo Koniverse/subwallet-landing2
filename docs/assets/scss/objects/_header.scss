@@ -15,7 +15,8 @@
 }
 
 .header-pinned {
-    background: #1B1B1B;
+    background: linear-gradient(180deg,#0c0e12,rgba(12,14,18,.1));
+    backdrop-filter: blur(4px);
 }
 
 .header.header-pinned .header-inner {
