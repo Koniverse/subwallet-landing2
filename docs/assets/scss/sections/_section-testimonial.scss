@@ -27,10 +27,24 @@
     padding: 54px 40px;
 
     &--text {
+        display: flex;
         font-size: 20px;
         line-height: 36px;
         color: #fff;
+        position: relative;
         margin-bottom: 40px;
+        text-indent: 20px;
+        &--first {
+            font-family: Plus Jakarta Sans;
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 73px;
+            letter-spacing: 0em;
+            text-align: center;
+            position: absolute;
+            top: -20px;
+            left: -30px;
+        }
     }
 
     &--info {
