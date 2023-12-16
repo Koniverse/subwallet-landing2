@@ -1,0 +1,34 @@
+name: Push Main
+on:
+  pull_request:
+    branches:
+      - anhnt_dev
+  push:
+    branches:
+      - anhnt_dev
+
+jobs:
+  master:
+    if: "! startsWith(github.event.head_commit.message, '[CI Skip]')"
+    runs-on: ubuntu-22.04
+    name: Build and Deploy
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      # === Build ===
+      # === Deploy static pages ===
+      - name: Deploy to Netlify
+        id: netlify_deployment
+        uses: nwtgck/actions-netlify@v2.0
+        with:
+          publish-dir: './docs'
+          alias: ${{ github.head_ref }}
+          github-token: ${{ secrets.GH_AUTOMATION_TOKEN }}
+          deploy-message: ${{ github.event.head_commit.message }}
+          enable-pull-request-comment: true
+          enable-commit-comment: true
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        timeout-minutes: 1

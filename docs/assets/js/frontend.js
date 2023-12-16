@@ -289,6 +289,19 @@
 				once: true,
 			} );
 		}
+		var $switcher = $( '.language-switcher' );
+
+		$switcher.on( 'click', '.current-lang', function( evt ) {
+			evt.preventDefault();
+
+			$switcher.addClass( 'show' );
+		} );
+
+		$( document ).on( 'click', function( e ) {
+			if ( $( e.target ).closest( $switcher ).length == 0 ) {
+				$switcher.removeClass( 'show' );
+			}
+		} );
 
 		function scrollTo() {
 			$( document.body ).on( 'click', '.scroll-to', function( evt ) {

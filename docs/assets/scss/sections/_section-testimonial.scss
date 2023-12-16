@@ -25,6 +25,9 @@
     background: #1A1A1A;
     border-radius: 16px;
     padding: 54px 40px;
+    &.cn {
+        height: 358px;
+    }
 
     &--text {
         display: flex;
