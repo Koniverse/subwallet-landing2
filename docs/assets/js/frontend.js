@@ -254,122 +254,157 @@
 );
 
 (
-	function( $ ) {
-		'use strict';
+    function ($) {
+        'use strict';
 
-		var Helpers = subwallet.Helpers,
-		    $window = $( window ),
-		    $header = $( '#header' );
+        var Helpers = subwallet.Helpers,
+            $window = $(window),
+            $header = $('#header');
 
-		$window.on( 'scroll', function() {
-			var currentST = $( this ).scrollTop();
+        $window.on('scroll', function () {
+            var currentST = $(this).scrollTop();
 
-			if ( currentST > 0 ) {
-				$header.addClass( 'header-pinned' );
-			} else {
-				$header.removeClass( 'header-pinned' );
-			}
-		} );
+            if (currentST > 0) {
+                $header.addClass('header-pinned');
+            } else {
+                $header.removeClass('header-pinned');
+            }
+        });
 
-		$( document ).ready( function() {
-			scrollTo();
-			//initVideoPopups();
-			initSliders();
-			initGrids();
-		} );
+        $(document).ready(function () {
+            scrollTo();
+            //initVideoPopups();
+            initSliders();
+            initGrids();
+            redirectLanguage();
+        });
 
-		$( window ).on( 'load', function() {
-			initSectionEffectSnow();
-		} );
+        function redirectLanguage() {
+            var language = navigator.language || navigator.userLanguage;
+            const params = window.location.search;
+            if (params.indexOf('lang') > -1) {
+                return;
+            }
+            let pathName = window.location.pathname;
+            const languages = ['/zh/'];
+			let isChangeToLanguageDefault = false;
+            for (const item of languages) {
+                if (pathName.indexOf(item) > -1){
+                    pathName = pathName.replace(item, '');
+					isChangeToLanguageDefault = true;
+                }
+            }
+            const country = language.split('-')[0] ?? 'en';
 
-		if ( typeof AOS !== 'undefined' ) {
-			AOS.init( {
-				duration: 1000,
-				delay: 200,
-				once: true,
-			} );
-		}
-		var $switcher = $( '.language-switcher' );
+            const LANGUAGE_SUPPORT_MAP = {
+                'zh': 'zh',
+                'en': 'en',
+            }
+            if (LANGUAGE_SUPPORT_MAP[country]) {
+                let value = LANGUAGE_SUPPORT_MAP[country];
+                if (pathName.indexOf(value) === -1) {
+                    if (isChangeToLanguageDefault && value === 'en'){
+						window.location.href = window.location.origin + '/' + pathName;
+					}
+					if (value !== 'en' && !isChangeToLanguageDefault){
+						window.location.href = window.location.origin + '/' + value   + pathName;
+					}
+                }
+            }
+        }
 
-		$switcher.on( 'click', '.current-lang', function( evt ) {
-			evt.preventDefault();
+        $(window).on('load', function () {
+            initSectionEffectSnow();
+        });
 
-			$switcher.addClass( 'show' );
-		} );
+        if (typeof AOS !== 'undefined') {
+            AOS.init({
+                duration: 1000,
+                delay: 200,
+                once: true,
+            });
+        }
+        var $switcher = $('.language-switcher');
 
-		$( document ).on( 'click', function( e ) {
-			if ( $( e.target ).closest( $switcher ).length == 0 ) {
-				$switcher.removeClass( 'show' );
-			}
-		} );
+        $switcher.on('click', '.current-lang', function (evt) {
+            evt.preventDefault();
 
-		function scrollTo() {
-			$( document.body ).on( 'click', '.scroll-to', function( evt ) {
-				evt.preventDefault();
-				const target = $( this ).attr( 'href' );
-				const offsetTop = $( target ).offset().top;
+            $switcher.addClass('show');
+        });
 
-				window.scroll( {
-					top: offsetTop - 30,
-					left: 0,
-					behavior: 'smooth'
-				} )
-			} )
-		}
+        $(document).on('click', function (e) {
+            if ($(e.target).closest($switcher).length == 0) {
+                $switcher.removeClass('show');
+            }
+        });
 
-		function initVideoPopups() {
-			if ( $.fn.lightGallery ) {
-				var options = {
-					selector: '.video-link',
-					fullScreen: false,
-					zoom: false,
-					getCaptionFromTitleOrAlt: false,
-					counter: false
-				};
+        function scrollTo() {
+            $(document.body).on('click', '.scroll-to', function (evt) {
+                evt.preventDefault();
+                const target = $(this).attr('href');
+                const offsetTop = $(target).offset().top;
 
-				$( '.video-popup' ).each( function() {
-					$( this ).lightGallery( options );
-				} );
-			}
-		}
+                window.scroll({
+                    top: offsetTop - 30,
+                    left: 0,
+                    behavior: 'smooth'
+                })
+            })
+        }
 
-		function initSliders() {
-			$( '.tm-swiper' ).each( function() {
-				$( this ).subwalletSwiper();
-			} );
-		}
+        function initVideoPopups() {
+            if ($.fn.lightGallery) {
+                var options = {
+                    selector: '.video-link',
+                    fullScreen: false,
+                    zoom: false,
+                    getCaptionFromTitleOrAlt: false,
+                    counter: false
+                };
 
-		function initGrids() {
-			if ( $.fn.subwalletGridLayout() ) {
-				$( '.block-grid' ).subwalletGridLayout();
-			}
-		}
+                $('.video-popup').each(function () {
+                    $(this).lightGallery(options);
+                });
+            }
+        }
 
-		function initSectionEffectSnow() {
-			if ( ! $.firefly ) {
-				return;
-			}
+        function initSliders() {
+            $('.tm-swiper').each(function () {
+                $(this).subwalletSwiper();
+            });
+        }
 
-			$( '.section-effect-snow' ).each( function() {
-				var $thisSection = $( this );
+        function initGrids() {
+            if ($.fn.subwalletGridLayout()) {
+                $('.block-grid').subwalletGridLayout();
+            }
+        }
 
-				var total = $thisSection.data( 'firefly-total' ) ? $thisSection.data( 'firefly-total' ) : 50;
+        function initSectionEffectSnow() {
+            if (!$.firefly) {
+                return;
+            }
 
-				var minPixel = Helpers.isHandheld() ? 2 : 3;
-				var maxPixel = Helpers.isHandheld() ? 3 : 4;
+            $('.section-effect-snow').each(function () {
+                var $thisSection = $(this);
 
-				var settings = {
-					color: 'rgba(255,255,255,0.3)',
-					minPixel: minPixel,
-					maxPixel: maxPixel,
-					total: total,
-					on: $thisSection,
-					zIndex: 0,
-				};
+                var total = $thisSection.data('firefly-total') ? $thisSection.data('firefly-total') : 50;
 
-				$.firefly( settings );
-			} );
-		}
+                var minPixel = Helpers.isHandheld() ? 2 : 3;
+                var maxPixel = Helpers.isHandheld() ? 3 : 4;
 
-	}( jQuery )
+                var settings = {
+                    color: 'rgba(255,255,255,0.3)',
+                    minPixel: minPixel,
+                    maxPixel: maxPixel,
+                    total: total,
+                    on: $thisSection,
+                    zIndex: 0,
+                };
+
+                $.firefly(settings);
+            });
+        }
+
+    }(jQuery)
 );
