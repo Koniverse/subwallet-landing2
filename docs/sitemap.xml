@@ -24,4 +24,24 @@
         <lastmod>2023-06-06T13:33:45+00:00</lastmod>
         <priority>0.80</priority>
     </url>
+    <url>
+        <loc>https://www.subwallet.app/zh/</loc>
+        <lastmod>2023-06-06T13:33:45+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://www.subwallet.app/zh/index.html</loc>
+        <lastmod>2023-06-06T13:33:45+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.subwallet.app/zh/security.html</loc>
+        <lastmod>2023-06-06T13:33:45+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.subwallet.app/zh/download.html</loc>
+        <lastmod>2023-06-06T13:33:45+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
 </urlset>
