@@ -100,22 +100,24 @@
                 <nav id="primary-menu" class="primary-menu">
                     <ul class="nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.subwallet.app/zh">
+                            <a class="nav-link" onClick="subwallet.Helpers.sendEventGa('zh_overview', 'https://www.subwallet.app/zh')">
                                 <span class="nav-text">概况</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="security.html?lang=1">
+                            <a class="nav-link" onClick="subwallet.Helpers.sendEventGa('zh_security', 'security.html?lang=1')">
                                 <span class="nav-text">安全性</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://dotinsights.subwallet.app/" target="_blank">
+                            <a class="nav-link" href="https://dotinsights.subwallet.app/"
+                               onClick="subwallet.Helpers.sendEventGa('zh_dotinsights')" target="_blank">
                                 <span class="nav-text">Dotinsights</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://docs.subwallet.app/" target="_blank">
+                            <a class="nav-link" href="https://docs.subwallet.app/"
+                               onClick="subwallet.Helpers.sendEventGa('zh_userguide')"target="_blank">
                                 <span class="nav-text">用户指南</span>
                             </a>
                         </li>
@@ -155,22 +157,24 @@
                 <nav id="mobile-menu" class="mobile-menu menu_scr collapse">
                     <ul class="nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.subwallet.app/">
+                            <a class="nav-link" onClick="subwallet.Helpers.sendEventGa('zh_overview', 'https://www.subwallet.app/')">
                                 <span class="nav-text">概况</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="security.html?lang=1">
+                            <a class="nav-link" onClick="subwallet.Helpers.sendEventGa('zh_security', 'security.html?lang=1')">
                                 <span class="nav-text">安全性</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://dotinsights.subwallet.app/" target="_blank">
+                            <a class="nav-link" href="https://dotinsights.subwallet.app/" target="_blank"
+                            onClick="subwallet.Helpers.sendEventGa('zh_dotinsights')">
                                 <span class="nav-text">Dotinsights</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://docs.subwallet.app/" target="_blank">
+                            <a class="nav-link" href="https://docs.subwallet.app/" target="_blank"
+                            onClick="subwallet.Helpers.sendEventGa('zh_userguide')">
                                 <span class="nav-text">用户指南</span>
                             </a>
                         </li>
@@ -198,7 +202,9 @@
                                     </p>
                                 </div>
                                 <div class="button-group">
-                                    <a class="button button-dark-border-light" href="download.html?lang=1" target="_blank">
+                                    <a class="button button-dark-border-light"
+                                       onClick="subwallet.Helpers.sendEventGa('zh_home_extension')"
+                                       href="download.html?lang=1" target="_blank">
 										<span class="button-icon">
 											<img loading="lazy" src="../assets/images/homepage/circle-check.svg"
                                                  width="24" height="24"
@@ -207,7 +213,9 @@
                                         <span class="button-text">扩展程序</span>
                                     </a>
 
-                                    <a class="button button-dark-border-light" href="download.html?lang=1" target="_blank">
+                                    <a class="button button-dark-border-light"
+                                       onClick="subwallet.Helpers.sendEventGa('zh_home_mobile')"
+                                       href="download.html?lang=1" target="_blank">
 										<span class="button-icon">
 											<img loading="lazy" src="../assets/images/homepage/circle-check.svg"
                                                  width="24" height="24"
@@ -216,7 +224,9 @@
                                         <span class="button-text">iOS & Android</span>
                                     </a>
 
-                                    <a class="button button-dark-border-light" href="https://web.subwallet.app/"
+                                    <a class="button button-dark-border-light"
+                                       href="https://web.subwallet.app/"
+                                       onClick="subwallet.Helpers.sendEventGa('zh_home_webdashboard')"
                                        target="_blank">
 										<span class="button-icon">
 											<img loading="lazy" src="../assets/images/homepage/circle-check.svg"
@@ -279,36 +289,41 @@
                     <div class="button-group-wrap">
                         <div class="button-group button-group-app">
                             <a class="button-image"
-                               href="https://apps.apple.com/us/app/subwallet-polkadot-wallet/id1633050285">
+                               onClick="subwallet.Helpers.sendEventGa('zh_appstore', 'https://apps.apple.com/us/app/subwallet-polkadot-wallet/id1633050285')">
                                 <img loading="lazy" src="../assets/images/homepage/dl-apple-store.svg" alt="AppStore"
                                      width="163" height="41">
                             </a>
-                            <a class="button-image" href="https://play.google.com/store/apps/details?id=app.subwallet.mobile
-							">
+                            <a class="button-image"
+                               onClick="subwallet.Helpers.sendEventGa('zh_googleplay', 'https://play.google.com/store/apps/details?id=app.subwallet.mobile')"
+                            >
                                 <img loading="lazy" src="../assets/images/homepage/dl-google-play.svg" alt="GooglePlay"
                                      width="150" height="36">
                             </a>
                         </div>
 
                         <div class="button-group button-group-browser">
-                            <a class="button-image"
+                            <a class="button-image" onClick="subwallet.Helpers.sendEventGa('zh_chrome')"
                                href="https://chrome.google.com/webstore/detail/subwallet-polkadot-extens/onhogfjeacnfoofkfgppdlbmlmnplgbn"
                                target="_blank">
                                 <img loading="lazy" src="../assets/images/homepage/chrome.png" alt="Chrome" width="37"
                                      height="37">
                             </a>
                             <a class="button-image"
+                               onClick="subwallet.Helpers.sendEventGa('zh_brave')"
                                href="https://chrome.google.com/webstore/detail/subwallet-polkadot-extens/onhogfjeacnfoofkfgppdlbmlmnplgbn"
                                target="_blank">
                                 <img loading="lazy" src="../assets/images/homepage/brave.png" alt="Brave" width="37"
                                      height="37">
                             </a>
-                            <a class="button-image" href="https://addons.mozilla.org/en-US/firefox/addon/subwallet/"
+                            <a class="button-image"
+                               onClick="subwallet.Helpers.sendEventGa('zh_firefox')"
+                               href="https://addons.mozilla.org/en-US/firefox/addon/subwallet/"
                                target="_blank">
                                 <img loading="lazy" src="../assets/images/homepage/firefox.png" alt="FireFox" width="37"
                                      height="37">
                             </a>
                             <a class="button-image"
+                               onClick="subwallet.Helpers.sendEventGa('zh_msedge')"
                                href="https://chrome.google.com/webstore/detail/subwallet-polkadot-extens/onhogfjeacnfoofkfgppdlbmlmnplgbn"
                                target="_blank">
                                 <img loading="lazy" src="../assets/images/homepage/edge.png" alt="Edge" width="37"
@@ -339,7 +354,8 @@
                             </p>
                         </div>
 
-                        <a class="button" href="download.html?lang=1">
+                        <a class="button"
+                            onClick="subwallet.Helpers.sendEventGa('zh_eplorenow', 'download.html?lang=1')">
 							<span class="button-icon">
 								<img loading="lazy" src="../assets/images/homepage/globe.svg" alt="Globe" width="23"
                                      height="24">
@@ -489,7 +505,8 @@
             </div>
             <div class="footer-features">
             <div class="__button">
-                <a class="button" href="download.html?lang=1">
+                <a class="button"
+                onClick="subwallet.Helpers.sendEventGa('zh_home_downloadsubwallet', 'download.html?lang=1')">
                     <span class="button-icon">
                         <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -572,7 +589,9 @@
                                 <div class="icon-box--desc">
                                     只有您才对自己的账号、资产、私钥以及数据具有管理权。用户一旦将此丢失，我们无法帮您恢复。
                                 </div>
-                                <a target="_blank" href="https://docs.subwallet.app/main/privacy-and-security/security"
+                                <a target="_blank"
+                                   onClick="subwallet.Helpers.sendEventGa('zh_readthedocs')"
+                                   href="https://docs.subwallet.app/main/privacy-and-security/security"
                                    class="icon-box--readmore link-transition-01">
                                     阅读文档
                                 </a>
@@ -591,6 +610,7 @@
                                     我们不会跟踪用户的个人信息、账户地址或资产金额。
                                 </div>
                                 <a target="_blank"
+                                   onClick="subwallet.Helpers.sendEventGa('zh_viewourpolicy')"
                                    href="https://docs.subwallet.app/main/privacy-and-security/privacy-policy"
                                    class="icon-box--readmore link-transition-01">阅读政策</a>
                             </div>
@@ -608,6 +628,7 @@
                                     作为Web3的一个项目，我们的GitHub保持开源的状态，因此任何人均可以审计我们的代码。
                                 </div>
                                 <a target="_blank" href="https://github.com/Koniverse"
+                                   onClick="subwallet.Helpers.sendEventGa('zh_probeourgithub')"
                                    class="icon-box--readmore link-transition-01">查看GitHub</a>
                             </div>
                         </div>
@@ -624,6 +645,7 @@
                                     我们已经两次正式通过独立安全审核 并获得认证。
                                 </div>
                                 <a href="https://www.verichains.io/?search=subwallet" target="_blank"
+                                   onClick="subwallet.Helpers.sendEventGa('zh_checkthereports')"
                                    class="icon-box--readmore link-transition-01">查询报告</a>
                             </div>
                         </div>
@@ -640,6 +662,7 @@
                                     为了更好地保护资产，您可以通过SubWallet钱包使用Polkadot Vault、Ledger和Keystone.
                                 </div>
                                 <a target="_blank"
+                                   onClick="subwallet.Helpers.sendEventGa('zh_readthedocs_coldwallet')"
                                    href="https://docs.subwallet.app/main/privacy-and-security/security#5.-cold-wallet-support"
                                    class="icon-box--readmore link-transition-01">阅读文档</a>
                             </div>
@@ -657,6 +680,7 @@
                                     我们已经集成了Polkadot｛.js｝和ChainPatrol的钓鱼列表，以保护您免受诈骗。
                                 </div>
                                 <a target="_blank"
+                                   onClick="subwallet.Helpers.sendEventGa('zh_readthedocs_phisingprev')"
                                    href="https://docs.subwallet.app/main/privacy-and-security/security#6.-phishing-prevention"
                                    class="icon-box--readmore link-transition-01">
                                     阅读文档
@@ -683,7 +707,8 @@
                                     </p>
                                 </div>
                                 <div class="button-group">
-                                    <a class="button button-black" href="download.html?lang=1">
+                                    <a class="button button-black"
+                                    onClick="subwallet.Helpers.sendEventGa('zh_home_downloadforfree', 'download.html?lang=1')">
 										<span class="button-icon">
 											<img loading="lazy" src="../assets/images/homepage/download-icon.svg"
                                                  alt="下载"/>
@@ -691,7 +716,8 @@
                                         <span class="button-text">免费下载</span>
                                     </a>
 
-                                    <a class="button button-black" href="mailto:agent@subwallet.app">
+                                    <a class="button button-black" href="mailto:agent@subwallet.app"
+                                    onClick="subwallet.Helpers.sendEventGa('zh_contacttointegrate')">
 										<span class="button-icon">
 											<img loading="lazy" src="../assets/images/homepage/handshake-icon.svg"
                                                  alt="Mail"/>
@@ -1050,18 +1076,19 @@
                             </div>
                         </div>
                         <ul class="give-it-item--list">
-                            <li><a target="_blank"
+                            <li><a target="_blank" onClick="subwallet.Helpers.sendEventGa('zh_chrome')"
                                    href="https://chrome.google.com/webstore/detail/subwallet-polkadot-extens/onhogfjeacnfoofkfgppdlbmlmnplgbn"><img
                                     loading="lazy" src="../assets/images/homepage/give-it-a-try/chrome.png"
                                     alt="Extension"/>Chrome</a></li>
-                            <li><a target="_blank"
+                            <li><a target="_blank" onClick="subwallet.Helpers.sendEventGa('zh_brave')"
                                    href="https://chrome.google.com/webstore/detail/subwallet-polkadot-extens/onhogfjeacnfoofkfgppdlbmlmnplgbn"><img
                                     loading="lazy" src="../assets/images/homepage/give-it-a-try/brave.png"
                                     alt="Extension"/>Brave</a></li>
-                            <li><a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/subwallet/"><img
+                            <li><a target="_blank" onClick="subwallet.Helpers.sendEventGa('zh_firefox')"
+                                   href="https://addons.mozilla.org/en-US/firefox/addon/subwallet/"><img
                                     loading="lazy" src="../assets/images/homepage/give-it-a-try/firefox.png"
                                     alt="Extension"/>FireFox</a></li>
-                            <li><a target="_blank"
+                            <li><a target="_blank" onClick="subwallet.Helpers.sendEventGa('zh_msedge')"
                                    href="https://chrome.google.com/webstore/detail/subwallet-polkadot-extens/onhogfjeacnfoofkfgppdlbmlmnplgbn"><img
                                     loading="lazy" src="../assets/images/homepage/give-it-a-try/edge.png"
                                     alt="Extension"/>MS Edge</a></li>
@@ -1076,15 +1103,20 @@
                         </div>
                         <ul class="give-it-item--list">
                             <li><a target="_blank"
+                                   onClick="subwallet.Helpers.sendEventGa('zh_appstore')"
                                    href="https://apps.apple.com/us/app/subwallet-polkadot-wallet/id1633050285"><img
                                     loading="lazy"
                                     src="../assets/images/homepage/give-it-a-try/appstore.png"
                                     alt="Mobile"/>App Store</a></li>
-                            <li><a target="_blank" href="https://play.google.com/store/apps/details?id=app.subwallet.mobile
+                            <li><a target="_blank"
+                                   onClick="subwallet.Helpers.sendEventGa('zh_googleplay')"
+                                   href="https://play.google.com/store/apps/details?id=app.subwallet.mobile
 								"><img loading="lazy"
                                        src="../assets/images/homepage/give-it-a-try/googleplay.png"
                                        alt="Mobile"/>Google Play</a></li>
-                            <li><a target="_blank" href="https://testflight.apple.com/join/ZW3pUbWj"><img loading="lazy"
+                            <li><a target="_blank"
+                                   onClick="subwallet.Helpers.sendEventGa('zh_testflight')"
+                                   href="https://testflight.apple.com/join/ZW3pUbWj"><img loading="lazy"
                                                                                                           src="../assets/images/homepage/give-it-a-try/TestFlight.png"
                                                                                                           alt="Mobile"/>TestFlight</a>
                             </li>
@@ -1098,7 +1130,7 @@
                             </div>
                         </div>
                         <ul class="give-it-item--list">
-                            <li><a href="https://web.subwallet.app/"><img loading="lazy"
+                            <li><a onClick="subwallet.Helpers.sendEventGa('zh_subwallet_webapp', 'https://web.subwallet.app/')"><img loading="lazy"
                                                                           src="../assets/images/homepage/give-it-a-try/subwallet.png"
                                                                           alt="Web"/>SubWallet</a></li>
                         </ul>
@@ -1125,6 +1157,7 @@
                     <div class="inner">
                         <a href="https://twitter.com/subwalletapp" target="_blank" rel="nofollow"
                            aria-label="Twitter"
+                           onClick="subwallet.Helpers.sendEventGa('zh_footer_twitter icon')"
                            class="footer-social-link twitter">
                             <svg width="18" height="16" viewBox="0 0 18 16" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -1135,6 +1168,7 @@
                         </a>
                         <a href="https://t.me/subwallet" target="_blank" rel="nofollow"
                            aria-label="Telegram"
+                           onClick="subwallet.Helpers.sendEventGa('zh_footer_telegram icon')"
                            class="footer-social-link telegram">
                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -1145,6 +1179,7 @@
                         </a>
                         <a href="https://blog.subwallet.app/" target="_blank" rel="nofollow"
                            aria-label="Medium"
+                           onClick="subwallet.Helpers.sendEventGa('zh_footer_medium icon')"
                            class="footer-social-link">
                             <svg width="20" height="12" viewBox="0 0 20 12" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -1153,8 +1188,9 @@
                                         fill="white"/>
                             </svg>
                         </a>
-                        <a href="https://blog.subwallet.app/" target="_blank" rel="nofollow"
+                        <a href="https://subwallet.substack.com/" target="_blank" rel="nofollow"
                            aria-label="Blog"
+                            onClick="subwallet.Helpers.sendEventGa('zh_footer_substack icon')"
                            class="footer-social-link">
                             <svg width="12" height="17" viewBox="0 0 12 17" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -1165,6 +1201,7 @@
                         </a>
                         <a href="https://discord.gg/PvjV5mu6Gq" target="_blank" rel="nofollow"
                            aria-label="Discord"
+                           onClick="subwallet.Helpers.sendEventGa('zh_footer_discord icon')"
                            class="footer-social-link discord">
                             <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -1183,27 +1220,29 @@
                 <div class="footer-widget-title">我们钱包</div>
                 <ul class="footer-menu">
                     <li>
-                        <a href="https://www.subwallet.app/" class="link-transition-01">
+                        <a onClick="subwallet.Helpers.sendEventGa('zh_footer_overview', 'https://www.subwallet.app/') class="link-transition-01">
                             概况
                         </a>
                     </li>
                     <li>
-                        <a href="download.html?lang=1" class="link-transition-01">
+                        <a onClick="subwallet.Helpers.sendEventGa('zh_footer_download', 'download.html?lang=1')" class="link-transition-01">
                             下载
                         </a>
                     </li>
                     <li>
-                        <a href="security.html?lang=1" class="link-transition-01">
+                        <a onClick="subwallet.Helpers.sendEventGa('zh_footer_security', 'security.html?lang=1')" class="link-transition-01">
                             安全性
                         </a>
                     </li>
                     <li>
-                        <a href="mailto:agent@subwallet.app" class="link-transition-01">
+                        <a href="mailto:agent@subwallet.app" class="link-transition-01"
+                        onClick="subwallet.Helpers.sendEventGa('zh_footer_support')">
                             客服
                         </a>
                     </li>
                     <li>
-                        <a href="https://docs.subwallet.app/" class="link-transition-01">
+                        <a onClick="subwallet.Helpers.sendEventGa('zh_footer_docs & Wiki', 'https://docs.subwallet.app/')"
+                           class="link-transition-01">
                             文档与Wiki
                         </a>
                     </li>
@@ -1213,27 +1252,28 @@
                 <div class="footer-widget-title">社交媒体</div>
                 <ul class="footer-menu">
                     <li>
-                        <a href="https://twitter.com/subwalletapp" class="link-transition-01">
+                        <a onClick="subwallet.Helpers.sendEventGa('zh_footer_Twitter icon', 'https://twitter.com/subwalletapp')" class="link-transition-01">
                             Twitter
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/company/subwallet/" class="link-transition-01">
+                        <a onClick="subwallet.Helpers.sendEventGa('zh_footer_linkedIn', 'https://www.linkedin.com/company/subwallet/')" class="link-transition-01">
                             LinkedIn
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.youtube.com/channel/UC5XYLzQ1G077kUb7guZEMdA" class="link-transition-01">
+                        <a onClick="subwallet.Helpers.sendEventGa('zh_footer_youtube', 'https://www.youtube.com/channel/UC5XYLzQ1G077kUb7guZEMdA')" class="link-transition-01">
                             Youtube
                         </a>
                     </li>
                     <li>
-                        <a href="https://t.me/subwallet" class="link-transition-01">
+                        <a onClick="subwallet.Helpers.sendEventGa('zh_footer_telegram', 'https://t.me/subwallet')"
+                                class="link-transition-01">
                             Telegram
                         </a>
                     </li>
                     <li>
-                        <a href="https://discord.gg/PvjV5mu6Gq" class="link-transition-01">
+                        <a onClick="subwallet.Helpers.sendEventGa('zh_footer_Discord', 'https://discord.gg/PvjV5mu6Gq')" class="link-transition-01">
                             Discord
                         </a>
                     </li>
@@ -1244,23 +1284,23 @@
                 <div class="footer-widget-title">信息资源</div>
                 <ul class="footer-menu">
                     <li>
-                        <a href="https://blog.subwallet.app/" class="link-transition-01">
+                        <a onClick="subwallet.Helpers.sendEventGa('zh_footer_blog', 'https://blog.subwallet.app/')" class="link-transition-01">
                             博客
                         </a>
                     </li>
                     <li>
-                        <a href="brandingkit.html?lang=1" class="link-transition-01">
+                        <a onClick="subwallet.Helpers.sendEventGa('zh_footer_brand Kit', 'brandingkit.html?lang=')" class="link-transition-01">
                             品牌工具包
                         </a>
                     </li>
                     <li>
-                        <a href="https://docs.subwallet.app/main/privacy-and-security/privacy-policy"
+                        <a onClick="subwallet.Helpers.sendEventGa('zh_footer_terms of use', 'https://docs.subwallet.app/main/privacy-and-security/terms-of-service')"
                            class="link-transition-01">
                             使用条款
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/Koniverse" class="link-transition-01">
+                        <a onClick="subwallet.Helpers.sendEventGa('zh_footer_github', 'https://github.com/Koniverse')" class="link-transition-01">
                             GitHub
                         </a>
                     </li>
