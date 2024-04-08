@@ -12,7 +12,8 @@
         };
 
         const sendEventGa = (category, link=null) => {
-            console.log('sendEventGa', category)
+            console.log('sendEventGa', category);
+            gtag('event', category);
             if (link) {
                 window.location.href = link;
             }
