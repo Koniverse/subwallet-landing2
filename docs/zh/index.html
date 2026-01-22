@@ -31,6 +31,16 @@
 
     <link rel="canonical" href="https://www.subwallet.app/"/>
 
+    <!-- Content Security Policy (CSP)-->
+    <meta http-equiv="content-security-policy" content="
+        default-src 'self';
+        script-src 'self' 'unsafe-inline' https://www.googletagmanager.com;
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        img-src 'self' data: https: blob:;
+        connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com;
+        base-uri 'self';
+        form-action 'self'">
     <!-- Favicon and App Icon -->
     <link rel="icon" href="../assets/images/favicon/favicon-32x32.png" sizes="32x32">
     <link rel="icon" href="../assets/images/favicon/favicon-192x192.png" sizes="192x192">
