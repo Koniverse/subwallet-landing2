@@ -37,7 +37,7 @@
         script-src 'self' 'unsafe-inline' https://www.googletagmanager.com;
         style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
         font-src 'self' https://fonts.gstatic.com data:;
-        img-src 'self' data: https: blob:;
+        img-src 'self' data: https://file-library.subwallet.app https://subwallet.app;
         connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com;
         base-uri 'self';
         form-action 'self'">
@@ -1369,5 +1369,24 @@
 <script src="./assets/libs/packery-mode/packery-mode.pkgd.js"></script>
 <script src="./assets/js/grid-layout.min.js"></script>
 <script src="./assets/js/frontend.js"></script>
+<!-- BS:SNIPPET--><script id="__bs_script__">//<![CDATA[
+  (function() {
+    try {
+      var script = document.createElement('script');
+      if ('async') {
+        script.async = true;
+      }
+      script.src = '/browser-sync/browser-sync-client.js?v=3.0.4'.replace("HOST", location.hostname);
+      if (document.body) {
+        document.body.appendChild(script);
+      } else if (document.head) {
+        document.head.appendChild(script);
+      }
+    } catch (e) {
+      console.error("Browsersync: could not append script tag", e);
+    }
+  })()
+//]]></script>
+<!-- BS:SNIPPET:END-->
 </body>
 </html>
