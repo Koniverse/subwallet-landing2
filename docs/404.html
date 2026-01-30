@@ -31,6 +31,16 @@
 
 	<link rel="canonical" href="https://www.subwallet.app/" />
 
+	<!-- Content Security Policy (CSP)-->
+	<meta http-equiv="content-security-policy" content="
+        default-src 'self';
+        script-src 'self' 'unsafe-inline' https://www.googletagmanager.com;
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com data:;
+        img-src 'self' data: https://file-library.subwallet.app https://subwallet.app;
+        connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com;
+        base-uri 'self';
+        form-action 'self'">
 	<!-- Favicon and App Icon -->
 	<link rel="icon" href="./assets/images/favicon/favicon-32x32.png" sizes="32x32">
 	<link rel="icon" href="./assets/images/favicon/favicon-192x192.png" sizes="192x192">
@@ -103,12 +113,12 @@
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="https://dotinsights.subwallet.app/" target="_blank">
+							<a class="nav-link" href="https://dotinsights.subwallet.app/" target="_blank" rel="noopener noreferrer">
 								<span class="nav-text">Dotinsights</span>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="https://docs.subwallet.app/" target="_blank">
+							<a class="nav-link" href="https://docs.subwallet.app/" target="_blank" rel="noopener noreferrer">
 								<span class="nav-text">User guide</span>
 							</a>
 						</li>
@@ -144,12 +154,12 @@
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="https://dotinsights.subwallet.app/" target="_blank">
+							<a class="nav-link" href="https://dotinsights.subwallet.app/" target="_blank" rel="noopener noreferrer">
 								<span class="nav-text">Dotinsights</span>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="https://docs.subwallet.app/" target="_blank">
+							<a class="nav-link" href="https://docs.subwallet.app/" target="_blank" rel="noopener noreferrer">
 								<span class="nav-text">User guide</span>
 							</a>
 						</li>
@@ -186,7 +196,7 @@
 			<div class="col-lg-6">
 				<div class="social-list footer-social-networks">
 					<div class="inner">
-						<a href="https://twitter.com/subwalletapp" target="_blank" rel="nofollow"
+						<a href="https://twitter.com/subwalletapp" target="_blank" rel="nofollow noopener noreferrer"
 						   aria-label="Twitter"
 						   class="footer-social-link twitter">
 							<svg width="18" height="16" viewBox="0 0 18 16" fill="none"
@@ -196,7 +206,7 @@
 									fill="white"/>
 							</svg>
 						</a>
-						<a href="https://t.me/subwallet" target="_blank" rel="nofollow"
+						<a href="https://t.me/subwallet" target="_blank" rel="nofollow noopener noreferrer"
 						   aria-label="Telegram"
 						   class="footer-social-link telegram">
 							<svg width="18" height="18" viewBox="0 0 18 18" fill="none"
@@ -206,7 +216,7 @@
 									fill="white"/>
 							</svg>
 						</a>
-						<a href="https://blog.subwallet.app/" target="_blank" rel="nofollow"
+						<a href="https://blog.subwallet.app/" target="_blank" rel="nofollow noopener noreferrer"
 						   class="footer-social-link">
 							<svg width="20" height="12" viewBox="0 0 20 12" fill="none"
 							     xmlns="http://www.w3.org/2000/svg">
@@ -215,7 +225,7 @@
 									fill="white"/>
 							</svg>
 						</a>
-						<a href="https://blog.subwallet.app/" target="_blank" rel="nofollow"
+						<a href="https://blog.subwallet.app/" target="_blank" rel="nofollow noopener noreferrer"
 						   aria-label="Blog"
 						   class="footer-social-link">
 							<svg width="12" height="17" viewBox="0 0 12 17" fill="none"
@@ -225,7 +235,7 @@
 									fill="white"/>
 							</svg>
 						</a>
-						<a href="https://discord.gg/PvjV5mu6Gq" target="_blank" rel="nofollow"
+						<a href="https://discord.gg/PvjV5mu6Gq" target="_blank" rel="nofollow noopener noreferrer"
 						   aria-label="Discord"
 						   class="footer-social-link discord">
 							<svg width="20" height="16" viewBox="0 0 20 16" fill="none"

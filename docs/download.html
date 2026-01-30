@@ -31,6 +31,16 @@
 
 	<link rel="canonical" href="https://www.subwallet.app/"/>
 
+    <!-- Content Security Policy (CSP)-->
+    <meta http-equiv="content-security-policy" content="
+        default-src 'self';
+        script-src 'self' 'unsafe-inline' https://www.googletagmanager.com;
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com data:;
+        img-src 'self' data: https://file-library.subwallet.app https://subwallet.app;
+        connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com;
+        base-uri 'self';
+        form-action 'self'">
 	<!-- Favicon and App Icon -->
 	<link rel="icon" href="./assets/images/favicon/favicon-32x32.png" sizes="32x32">
 	<link rel="icon" href="./assets/images/favicon/favicon-192x192.png" sizes="192x192">
@@ -110,13 +120,13 @@
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="https://dotinsights.subwallet.app/"
-							   onClick="subwallet.Helpers.sendEventGa('dotinsights')" target="_blank">
+							   onClick="subwallet.Helpers.sendEventGa('dotinsights')" target="_blank" rel="noopener noreferrer">
 								<span class="nav-text">Dotinsights</span>
 							</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="https://docs.subwallet.app/"
-							   onClick="subwallet.Helpers.sendEventGa('userguide')" target="_blank">
+							   onClick="subwallet.Helpers.sendEventGa('userguide')" target="_blank" rel="noopener noreferrer">
 								<span class="nav-text">User guide</span>
 							</a>
 						</li>
@@ -167,13 +177,13 @@
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="https://dotinsights.subwallet.app/"
-							   onClick="subwallet.Helpers.sendEventGa('dotinsights')" target="_blank">
+							   onClick="subwallet.Helpers.sendEventGa('dotinsights')" target="_blank" rel="noopener noreferrer">
 								<span class="nav-text">Dotinsights</span>
 							</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="https://docs.subwallet.app/"
-							   onClick="subwallet.Helpers.sendEventGa('userguide')" target="_blank">
+							   onClick="subwallet.Helpers.sendEventGa('userguide')" target="_blank" rel="noopener noreferrer">
 								<span class="nav-text">User guide</span>
 							</a>
 						</li>
@@ -206,19 +216,19 @@
                         </div>
                         <ul class="give-it-item--list">
                             <li><a target="_blank" onClick="subwallet.Helpers.sendEventGa('chrome')"
-                                   href="https://chrome.google.com/webstore/detail/subwallet-polkadot-extens/onhogfjeacnfoofkfgppdlbmlmnplgbn"><img
+                                   href="https://chrome.google.com/webstore/detail/subwallet-polkadot-extens/onhogfjeacnfoofkfgppdlbmlmnplgbn" rel="noopener noreferrer"><img
                                     loading="lazy" src="./assets/images/homepage/give-it-a-try/chrome.png"
                                     alt="Extension"/>Chrome</a></li>
                             <li><a target="_blank" onClick="subwallet.Helpers.sendEventGa('brave')"
-                                   href="https://chrome.google.com/webstore/detail/subwallet-polkadot-extens/onhogfjeacnfoofkfgppdlbmlmnplgbn"><img
+                                   href="https://chrome.google.com/webstore/detail/subwallet-polkadot-extens/onhogfjeacnfoofkfgppdlbmlmnplgbn" rel="noopener noreferrer"><img
                                     loading="lazy" src="./assets/images/homepage/give-it-a-try/brave.png"
                                     alt="Extension"/>Brave</a></li>
                             <li><a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/subwallet/"
-                            onClick="subwallet.Helpers.sendEventGa('firefox')"><img
+                            onClick="subwallet.Helpers.sendEventGa('firefox')" rel="noopener noreferrer"><img
                                     loading="lazy" src="./assets/images/homepage/give-it-a-try/firefox.png"
                                     alt="Extension"/>FireFox</a></li>
                             <li><a target="_blank" onClick="subwallet.Helpers.sendEventGa('msedge')"
-                                   href="https://chrome.google.com/webstore/detail/subwallet-polkadot-extens/onhogfjeacnfoofkfgppdlbmlmnplgbn"><img
+                                   href="https://chrome.google.com/webstore/detail/subwallet-polkadot-extens/onhogfjeacnfoofkfgppdlbmlmnplgbn" rel="noopener noreferrer"><img
                                     loading="lazy" src="./assets/images/homepage/give-it-a-try/edge.png"
                                     alt="Extension"/>MS Edge</a></li>
                         </ul>
@@ -231,16 +241,16 @@
                         </div>
                         <ul class="give-it-item--list">
                             <li><a target="_blank" onClick="subwallet.Helpers.sendEventGa('appstore')"
-                                   href="https://apps.apple.com/us/app/subwallet-polkadot-wallet/id1633050285"><img
+                                   href="https://apps.apple.com/us/app/subwallet-polkadot-wallet/id1633050285" rel="noopener noreferrer"><img
                                     loading="lazy"
                                     src="./assets/images/homepage/give-it-a-try/appstore.png"
                                     alt="Mobile"/>App Store</a></li>
                             <li><a target="_blank" href="https://play.google.com/store/apps/details?id=app.subwallet.mobile"
-                            onClick="subwallet.Helpers.sendEventGa('googleplay')"><img loading="lazy"
+                            onClick="subwallet.Helpers.sendEventGa('googleplay')" rel="noopener noreferrer"><img loading="lazy"
                                        src="./assets/images/homepage/give-it-a-try/googleplay.png"
                                        alt="Mobile"/>Google Play</a></li>
                             <li><a target="_blank" href="https://testflight.apple.com/join/ZW3pUbWj"
-                            onClick="subwallet.Helpers.sendEventGa('testflight')"><img loading="lazy"
+                            onClick="subwallet.Helpers.sendEventGa('testflight')" rel="noopener noreferrer"><img loading="lazy"
                                                                                                           src="./assets/images/homepage/give-it-a-try/TestFlight.png"
                                                                                                           alt="Mobile"/>TestFlight</a>
                             </li>
@@ -281,7 +291,7 @@
             <div class="col-lg-6">
                 <div class="social-list footer-social-networks">
                     <div class="inner">
-                        <a href="https://twitter.com/subwalletapp" target="_blank" rel="nofollow"
+                        <a href="https://twitter.com/subwalletapp" target="_blank" rel="nofollow noopener noreferrer"
                            aria-label="Twitter"
                            onClick="subwallet.Helpers.sendEventGa('footer_twitter icon')"
                            class="footer-social-link twitter">
@@ -292,7 +302,7 @@
                                         fill="white"/>
                             </svg>
                         </a>
-                        <a href="https://t.me/subwallet" target="_blank" rel="nofollow"
+                        <a href="https://t.me/subwallet" target="_blank" rel="nofollow noopener noreferrer"
                            aria-label="Telegram"
                            onClick="subwallet.Helpers.sendEventGa('footer_telegram icon')"
                            class="footer-social-link telegram">
@@ -303,7 +313,7 @@
                                         fill="white"/>
                             </svg>
                         </a>
-                        <a href="https://blog.subwallet.app/" target="_blank" rel="nofollow"
+                        <a href="https://blog.subwallet.app/" target="_blank" rel="nofollow noopener noreferrer"
                            aria-label="Medium"
                            onClick="subwallet.Helpers.sendEventGa('footer_medium icon')"
                            class="footer-social-link">
@@ -314,7 +324,7 @@
                                         fill="white"/>
                             </svg>
                         </a>
-                        <a href="https://subwallet.substack.com/" target="_blank" rel="nofollow"
+                        <a href="https://subwallet.substack.com/" target="_blank" rel="nofollow noopener noreferrer"
                            aria-label="Blog"
                            onClick="subwallet.Helpers.sendEventGa('footer_substack icon')"
                            class="footer-social-link">
@@ -325,7 +335,7 @@
                                         fill="white"/>
                             </svg>
                         </a>
-                        <a href="https://discord.gg/PvjV5mu6Gq" target="_blank" rel="nofollow"
+                        <a href="https://discord.gg/PvjV5mu6Gq" target="_blank" rel="nofollow noopener noreferrer"
                            aria-label="Discord"
                            onClick="subwallet.Helpers.sendEventGa('footer_discord icon')"
                            class="footer-social-link discord">

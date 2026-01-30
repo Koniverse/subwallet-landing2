@@ -23,6 +23,16 @@
 	<meta property="og:image:width" content="1200"/>
 	<meta property="og:image:height" content="630"/>
 
+	<!-- Content Security Policy (CSP)-->
+	<meta http-equiv="content-security-policy" content="
+        default-src 'self';
+        script-src 'self' 'unsafe-inline' https://www.googletagmanager.com;
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com data:;
+        img-src 'self' data: https://file-library.subwallet.app https://subwallet.app;
+        connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com;
+        base-uri 'self';
+        form-action 'self'">
 	<!-- Favicon and App Icon -->
 	<link rel="icon" href="../assets/images/favicon/favicon-32x32.png" sizes="32x32">
 	<link rel="icon" href="../assets/images/favicon/favicon-192x192.png" sizes="192x192">
@@ -86,12 +96,12 @@
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="https://dotinsights.subwallet.app/" target="_blank">
+							<a class="nav-link" href="https://dotinsights.subwallet.app/" target="_blank" rel="noopener noreferrer">
 								<span class="nav-text">Dotinsights</span>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="https://docs.subwallet.app/" target="_blank">
+							<a class="nav-link" href="https://docs.subwallet.app/" target="_blank" rel="noopener noreferrer">
 								<span class="nav-text">User guide</span>
 							</a>
 						</li>
@@ -163,12 +173,12 @@
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="https://dotinsights.subwallet.app/" target="_blank">
+							<a class="nav-link" href="https://dotinsights.subwallet.app/" target="_blank" rel="noopener noreferrer">
 								<span class="nav-text">Dotinsights</span>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="https://docs.subwallet.app/" target="_blank">
+							<a class="nav-link" href="https://docs.subwallet.app/" target="_blank" rel="noopener noreferrer">
 								<span class="nav-text">User guide</span>
 							</a>
 						</li>
@@ -238,7 +248,7 @@
 						<h4 class="section-title report-title report-text-gradient">第一份 Polkadot 深度季度研究报告</h4>
 						<div class="section-description-wrap">
 							<div class="section-description">
-								<p>2019 年成功推出金丝雀网络 Kusama 之后，Polkadot 于 2020 年 5 月 2 日<a target="_blank" href="https://polkadot.network/blog/web3-foundation-initiates-launch-polkadot-is-live/">上线</a>,
+								<p>2019 年成功推出金丝雀网络 Kusama 之后，Polkadot 于 2020 年 5 月 2 日<a target="_blank" href="https://polkadot.network/blog/web3-foundation-initiates-launch-polkadot-is-live/" rel="noopener noreferrer">上线</a>,
 									并吸引了众多媒体、加密用户和风险投资的强烈关注。
 									虽然 Polkadot 生态系统的开发活动向来活跃，但由于其数据分割使得用户很难跟踪信息，所以经常面临抱怨和怀疑。
 									为了展现 Polkadot 和 Kusama 的全景并提供对它们和详细的见解，SubWallet 收集了分散在不同来源的数据，
@@ -283,9 +293,9 @@
 					<h3 class="heading">财政状况和开发活跃度</h3>
 					<div class="text-wrap">
 						<div class="text">
-							<p>在 2022 年上半年，加密货币市场进入了被称为<a href="https://www.bloomberg.com/news/articles/2022-06-26/crypto-winter-why-this-bitcoin-bear-market-is-different-from-the-past" target="_blank">最糟糕的加密货币寒冬之一</a>
+							<p>在 2022 年上半年，加密货币市场进入了被称为<a href="https://www.bloomberg.com/news/articles/2022-06-26/crypto-winter-why-this-bitcoin-bear-market-is-different-from-the-past" target="_blank" rel="noopener noreferrer">最糟糕的加密货币寒冬之一</a>
 								，并可能导致了许多人破产。在 2021 年 5 月初的第一次平行链拍卖前后，DOT 创下了
-								55 美元的历史新高，市值一度达到 53.2 亿美元，此后，DOT 价格一路急剧下滑，至 <a href="https://www.coindesk.com/learn/the-fall-of-terra-a-timeline-of-the-meteoric-rise-and-crash-of-ust-and-luna/" target="_blank">LUNA/UST</a> 史无
+								55 美元的历史新高，市值一度达到 53.2 亿美元，此后，DOT 价格一路急剧下滑，至 <a href="https://www.coindesk.com/learn/the-fall-of-terra-a-timeline-of-the-meteoric-rise-and-crash-of-ust-and-luna/" target="_blank" rel="noopener noreferrer">LUNA/UST</a> 史无
 								前例地陨落后的一个月， 6 月 13 日 DOT 跌至 6.43 美元，市值仅为 69 亿美元。自年初到现在，DOT 的市值已
 								下降了 75.03%，从 264.3 亿美元下降到 66 亿美元。KSM 的价格和市值或多或少经历了相同的波动模式。
 							</p>
@@ -333,7 +343,7 @@
 							</div>
 							<div class="col-md-6">
 								由此可以推断，熊市并不影响生态建设者的热情。价格下滑只是冰山一角，Polkadot 生态系统的开发团队一直高度专注于开发和优化产品，
-								特别是 Polkadot 引入了承诺将促进平行链和 DApp 之间<a href="https://medium.com/@djhatrang/my-first-blog-everything-xcm-made-simple-af36907e461" target="_blank">互操作性</a>的 <a href="https://twitter.com/Polkadot/status/1521840371470409735" target="_blank">XCM</a> 之后，这一现象尤为明显。
+								特别是 Polkadot 引入了承诺将促进平行链和 DApp 之间<a href="https://medium.com/@djhatrang/my-first-blog-everything-xcm-made-simple-af36907e461" target="_blank" rel="noopener noreferrer">互操作性</a>的 <a href="https://twitter.com/Polkadot/status/1521840371470409735" target="_blank" rel="noopener noreferrer">XCM</a> 之后，这一现象尤为明显。
 							</div>
 						</div>
 					</div>
@@ -373,7 +383,7 @@
 					<div class="text">
 						<div class="row">
 							<div class="col-md-6">就开发者总数而言，2021 年的
-								<a href="https://medium.com/electric-capital/electric-capital-developer-report-2021-f37874efea6d" target="_blank">《电力资本开发者报告》</a>
+								<a href="https://medium.com/electric-capital/electric-capital-developer-report-2021-f37874efea6d" target="_blank" rel="noopener noreferrer">《电力资本开发者报告》</a>
 								认为，Ethereum、Polkadot、Cosmos、Solana 和 Bitcoin 是五个最大的生态系统。
 								上图显示了这五个生态系统在 2022 年上半年的开发活跃度。
 							</div>
@@ -418,7 +428,7 @@
 					<div class="text">
 						<div class="row">
 							<div class="col-md-6">截至 6 月底，共有
-								<a href="https://parachains.info/" target="_blank">171 个项目</a>
+								<a href="https://parachains.info/" target="_blank" rel="noopener noreferrer">171 个项目</a>
 								宣布将运营相应的平行链，其中 36 个在 Kusama 上赢得了拍卖，21 个在 Polkadot 上赢得了拍卖，
 								分别绑定了 3.27 亿个 KSM 和 131.45 万个 DOT。
 							</div>
@@ -467,7 +477,7 @@
 				<div class="block-text">
 					<div class="text">
 						<div class="row">
-							<div class="col-md-6">至于投资者，除ETH和BTC外，在<a href="https://twitter.com/MessariCrypto/status/1541813728751910912" target="_blank"> Messari 调查</a>的各大风险投资机构中，
+							<div class="col-md-6">至于投资者，除ETH和BTC外，在<a href="https://twitter.com/MessariCrypto/status/1541813728751910912" target="_blank" rel="noopener noreferrer"> Messari 调查</a>的各大风险投资机构中，
 								DOT仍然是他们持有最多的加密资产。从 2021 年上半年到 2022 年上半年，投资于 DOT 的风险投资机构数量从 19 家稳步增加到 29 家。
 							</div>
 							<div class="col-md-6">
@@ -528,15 +538,15 @@
 					<h3 class="heading">治理与财政</h3>
 					<div class="text">
 						<div class="row">
-							<div class="col-md-6">在撰写本报告时，需要通过提案批准的<a href="https://wiki.polkadot.network/docs/learn-treasury" target="_blank">财政支出</a>，是由 13 名成员
+							<div class="col-md-6">在撰写本报告时，需要通过提案批准的<a href="https://wiki.polkadot.network/docs/learn-treasury" target="_blank" rel="noopener noreferrer">财政支出</a>，是由 13 名成员
 								组成的理事会决定的。除了需要由 3 名成员组成的技术委员会进行快速批准的紧急情况以外，
 								民主公投每次仅可处理一项事务。虽然这种模式在确保网络安全和公平授权财政资金方面一直都运作良好，
 								但它也引起了人们对权力集中和流程敏捷性的担忧。
 							</div>
 							<div class="col-md-6">全球性的
-								<a href="https://decoded.polkadot.network/" target="_blank">Polkadot Decoded 2022</a>，于 6 月 29 日至 30 日在四个地点进行线下会议和在线直播。
+								<a href="https://decoded.polkadot.network/" target="_blank" rel="noopener noreferrer">Polkadot Decoded 2022</a>，于 6 月 29 日至 30 日在四个地点进行线下会议和在线直播。
 								期间，Polkadot 联合创始人 Gavin Wood 介绍了
-								<a href="https://www.youtube.com/watch?v=tBvxn8WfcFI" target="_blank">Goverrnance 2.0</a>，
+								<a href="https://www.youtube.com/watch?v=tBvxn8WfcFI" target="_blank" rel="noopener noreferrer">Goverrnance 2.0</a>，
 								它帮助解决了这些担忧。在 Governance 2.0 中理事会和技术委员会将被取消，从提案到拨款的一切都将进入公投流程，
 								然后通过一个新的机制进行评估和投票，以确保安全和敏捷性之间的最优和适应性平衡。
 							</div>
@@ -571,7 +581,7 @@
 						截止目前，DOT 今年的财政动态比以往任何时候都多。140 份提案中有 57 个（占 40.7%）
 						是在 2022 年前六个月提交的，只有一份被否决。
 						通货膨胀仍是财政的主要收入来源，其利率徘徊在
-						<a href="https://polkadot.subscan.io/validator" target="_blank">7% 左右</a>；而销毁则是财政支出的主要手段，占据大部分的份额。
+						<a href="https://polkadot.subscan.io/validator" target="_blank" rel="noopener noreferrer">7% 左右</a>；而销毁则是财政支出的主要手段，占据大部分的份额。
 					</div>
 				</div>
 			</div>
@@ -633,8 +643,8 @@
 						<div class="col-md-6 col-lg-5 col-lg-push-1">
 							<div class="block-text">
 								<div class="text">
-									在已获批准的提案中，<a href="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frpc.polkadot.io#/democracy/dispatch" target="_blank">《Polkadot 参加达沃斯举行的 2022 世界经济论坛年会》</a>通过了
-									<a href="https://polkadot.polkassembly.io/motion/202" target="_blank">Motion 202</a>，并以简单多数计票通过了<a href="https://polkadot.polkassembly.io/referendum/64" target="_blank">64 号民主公投</a>——其申请的 DOT 数量为有史以来的最高：120,897 个 DOT。然而，由于<a href="https://wiki.polkadot.network/docs/maintain-guides-democracy" target="_blank">实施期</a>的原因，该基金直到第 11,289,600 号区块，也就是大约 7 月 23 日才被解锁。
+									在已获批准的提案中，<a href="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frpc.polkadot.io#/democracy/dispatch" target="_blank" rel="noopener noreferrer">《Polkadot 参加达沃斯举行的 2022 世界经济论坛年会》</a>通过了
+									<a href="https://polkadot.polkassembly.io/motion/202" target="_blank" rel="noopener noreferrer">Motion 202</a>，并以简单多数计票通过了<a href="https://polkadot.polkassembly.io/referendum/64" target="_blank" rel="noopener noreferrer">64 号民主公投</a>——其申请的 DOT 数量为有史以来的最高：120,897 个 DOT。然而，由于<a href="https://wiki.polkadot.network/docs/maintain-guides-democracy" target="_blank" rel="noopener noreferrer">实施期</a>的原因，该基金直到第 11,289,600 号区块，也就是大约 7 月 23 日才被解锁。
 								</div>
 							</div>
 						</div>
@@ -642,8 +652,8 @@
 				</div>
 				<div class="block-text block-text-justify-center" style="--text-width: 958px">
 					<div class="text">
-						DOT 财政库还预计在 <a href="https://www.dotreasury.com/dot/bounties/10" target="_blank">Bounty 10</a> 完成之后，为 Polkadot 先锋奖支出993,286.08 个 DOT。
-						虽然具体细节尚未公布，但这个所谓的 <a href="https://pioneersprize.polkadot.network/" target="_blank">“区块链最大赏金”</a>
+						DOT 财政库还预计在 <a href="https://www.dotreasury.com/dot/bounties/10" target="_blank" rel="noopener noreferrer">Bounty 10</a> 完成之后，为 Polkadot 先锋奖支出993,286.08 个 DOT。
+						虽然具体细节尚未公布，但这个所谓的 <a href="https://pioneersprize.polkadot.network/" target="_blank" rel="noopener noreferrer">“区块链最大赏金”</a>
 						承诺其必将成为推动建设者进入 Polkadot 生态并推动该生态向前发展的巨大力量。
 					</div>
 				</div>
@@ -688,8 +698,8 @@
 								降。Polkadot DeFi 平行链的总 TVL 远超 Kusama，两个主要代表 Acala 和 Parallel 的TVL 于上半年都在 5 亿美元左右波
 								动。虽然 Acala 成为平行链的时间比 Parallel 晚得多，但其开局不错，前两个月的 TVL 平均比 Parallel 高 15
 								%，最高达到了 77.73 亿美元。在上半年的剩余时间里，Acala 的领先优势平均下降了 20
-								%。Parallel 趁机崛起，成为 TVL 方面的<a href="https://twitter.com/PolkadotNation/status/1517347965035479040" target="_blank">卫冕协议</a>，但该结论难以百分百地确认，
-								因为 <a href="https://defillama.com/chain/Parallel" target="_blank">Defi Llama</a> 和 <a href="https://analytics.parallel.fi/" target="_blank">Parallel Analytics</a> 之间的数据报告结果不一致。</p>
+								%。Parallel 趁机崛起，成为 TVL 方面的<a href="https://twitter.com/PolkadotNation/status/1517347965035479040" target="_blank" rel="noopener noreferrer">卫冕协议</a>，但该结论难以百分百地确认，
+								因为 <a href="https://defillama.com/chain/Parallel" target="_blank" rel="noopener noreferrer">Defi Llama</a> 和 <a href="https://analytics.parallel.fi/" target="_blank" rel="noopener noreferrer">Parallel Analytics</a> 之间的数据报告结果不一致。</p>
 						</div>
 					</div>
 				</div>
@@ -790,9 +800,9 @@
 								<div class="col-md-6">StellaSwap 和 Beamswap 通过使用相同的高收益 APY 策略来吸引用户，
 									在前两周内都实现了飞速增长，分别为 2000%+ 和 700%+。
 									在最初的 24 小时内，StellaSwap TVL
-									<a href="https://twitter.com/StellaSwap/status/1481316754995429381" target="_blank">超过 50 万美元</a>，
+									<a href="https://twitter.com/StellaSwap/status/1481316754995429381" target="_blank" rel="noopener noreferrer">超过 50 万美元</a>，
 									而 Beamswap TVL 一度飙升至
-									<a href="https://twitter.com/Beamswapio/status/1484158321141682183" target="_blank">4000 万美元</a>。不过，有趣的是，Beamswap 在上线之时仅有六种 Staking 选择，而 StellaSwap 有八种。
+									<a href="https://twitter.com/Beamswapio/status/1484158321141682183" target="_blank" rel="noopener noreferrer">4000 万美元</a>。不过，有趣的是，Beamswap 在上线之时仅有六种 Staking 选择，而 StellaSwap 有八种。
 								</div>
 								<div class="col-md-6">2022 上半年这六个月的时间，确实证明了 Beamswap 多样化选择叠加先发优势的有效性，
 									其仅在 3 月份里有 3 天被 StellaSwap 小幅超越。
@@ -831,14 +841,14 @@
 					<div class="text-wrap">
 						<div class="text">
 							<div class="row">
-								<div class="col-md-6">5 月底的一项<a href="https://twitter.com/Solarbeamio/status/1528804513292992513" target="_blank">激励措施</a>让 Solarbeam 超越了 Beamswap 和 Zenlink，甚至有两周时间接近 StellaSwap。
+								<div class="col-md-6">5 月底的一项<a href="https://twitter.com/Solarbeamio/status/1528804513292992513" target="_blank" rel="noopener noreferrer">激励措施</a>让 Solarbeam 超越了 Beamswap 和 Zenlink，甚至有两周时间接近 StellaSwap。
 									它在 Moonbeam 上的姐妹项目 Solarflare， 自 1 月中旬 TVL 收入达到 9776 万美元后，
 									似乎就失去了社区和市场支持。Solarbeam 基金会的新战略显然是要避开与
 									StellaSwap 和 Beamswap 在Moonbeam上的激烈竞争，专注于推动 Solarbeam 成为
 									Moonriver 生态系统中的头号原生 DEX。
 								</div>
 								<div class="col-md-6">从第三季度开始，在 Bifrost、Moonbeam 和 Moonriver 上运行的 DEX 协议 Zenlink
-									<a href="https://twitter.com/ZenlinkPro/status/1543918371351121920" target="_blank">计划将其活动</a>扩展到 Astar 网络，这是重要的一步，将有望提升其不断下降的 TVL。
+									<a href="https://twitter.com/ZenlinkPro/status/1543918371351121920" target="_blank" rel="noopener noreferrer">计划将其活动</a>扩展到 Astar 网络，这是重要的一步，将有望提升其不断下降的 TVL。
 									同时，Zenlink 可能面临与 ArthSwap 竞争的难题。ArthSwap 目前是 Astar 上的第一大 DEX，
 									其 TVL 在 4 月达到了 1.695 亿美元的峰值。但 ArthSwap 在 5 月 LUNA/UST
 									的崩盘中遭受了严重影响，这或许成为 Zenlink 获得优势的机会。自 LUNA/UST
@@ -869,7 +879,7 @@
 									时间就超过了 1 亿美元，九天超过了 1.5亿 美元，令人印象深刻。
 								</div>
 								<div class="col-md-6">其姐妹项目 Moonwell Artemis，6 月 23 日在 Moonbeam 上发布，在不到 两天的时间里实现了
-									<a href="https://twitter.com/MoonwellDeFi/status/1540411546966171648" target="_blank">1.5 亿美元的 TVL</a>。
+									<a href="https://twitter.com/MoonwellDeFi/status/1540411546966171648" target="_blank" rel="noopener noreferrer">1.5 亿美元的 TVL</a>。
 									由于 Moonwell Artemis 的成功推出，Moonwell Apollo 也在 6 月 24 日迎来了
 									TVL 的飙升，从 8,190 万美元增长到 1.9 亿美元（2.3倍），但第二天又回落到 8,790 万美元。
 								</div>
@@ -930,10 +940,10 @@
 						<div class="text">
 							<div class="row">
 								<div class="col-md-6">稳定币被视为可能的
-									<a href="https://hbr.org/2021/08/stablecoins-and-the-future-of-money" target="_blank">未来货币</a>。随着越来越多的项目进入
+									<a href="https://hbr.org/2021/08/stablecoins-and-the-future-of-money" target="_blank" rel="noopener noreferrer">未来货币</a>。随着越来越多的项目进入
 									Polkadot 生态系统，稳定币也在该生态系统中也越来越受欢迎，这同时也意味着，稳定币采用的竞争越来越激烈。
 									aUSD 是 Acala 发行的通过超额抵押加密货币来获得支持的原生稳定币，
-									目前在 Polkadot 中仍然是最常使用的，这部分归因于其 <a href="https://acala.network/ecosystem-program" target="_blank">2.5 亿美元的 aUSD 生态系统基金</a>，以及其与生态系统中 DeFi 协议和平行链的快速集合
+									目前在 Polkadot 中仍然是最常使用的，这部分归因于其 <a href="https://acala.network/ecosystem-program" target="_blank" rel="noopener noreferrer">2.5 亿美元的 aUSD 生态系统基金</a>，以及其与生态系统中 DeFi 协议和平行链的快速集合
 								</div>
 								<div class="col-md-6">
 									<p>在顶峰时期，即 5 月 7 日，Acala 和 Karura 的 aUSD 发
@@ -977,12 +987,12 @@
 						<div class="text">
 							<div class="row">
 								<div class="col-md-6">4 月 13 日，最受欢迎的稳定币 USDT
-									<a href="https://www.coindesk.com/business/2022/04/13/tethers-usdt-stablecoin-enters-polkadot-ecosystem-with-kusama-launch/#:~:text=The%20network%20is%20named%20after,native%20cryptocurrencies%2C%20DOT%20and%20KSM" target="_blank">正式入驻 Kusama</a>。
+									<a href="https://www.coindesk.com/business/2022/04/13/tethers-usdt-stablecoin-enters-polkadot-ecosystem-with-kusama-launch/#:~:text=The%20network%20is%20named%20after,native%20cryptocurrencies%2C%20DOT%20and%20KSM" target="_blank" rel="noopener noreferrer">正式入驻 Kusama</a>。
 									在此事件之前，USDT、USDC、DAI 和 BUSD 等多链稳定币已通过 Moonbeam/Moonriver
 									桥接到 Polkadot，但直到 USDT 入场后，Polkadot 才有了原生的 deposit。
 								</div>
 								<div class="col-md-6">然而，在 USDT 超过 800 亿美元的总流通中，Statemint 上发行的
-									<a href="https://statemine.statescan.io/asset/1984" target="_blank">50 万个 USDT </a>
+									<a href="https://statemine.statescan.io/asset/1984" target="_blank" rel="noopener noreferrer">50 万个 USDT </a>
 									表明了 Tether 和 Polkadot 的联接非常松散。如若不是紧密的战略伙伴关
 									系致使 USDT 在 Polkadot 的总供应快速增加，那么 Tether 可能难以超过 Polkadot 原生稳定币。
 									同样地，Polkadot 也可能难以招揽 USDT 用户。
@@ -1005,8 +1015,8 @@
 				</div>
 				<div class="block-text block-text-justify-center" style="--text-width: 970px;">
 					<div class="text-wrap">
-						<div class="text">尽管仍处于起步阶段，但基于 Polkadot 的 NFT 已经出现了一些有潜力的本土玩家，包括 <a href="https://kodadot.xyz/" target="_blank">KodaDot</a>、<a href="https://moonbeanstoken.com/" target="_blank">Moonbeans</a>、 <a href="https://singular.app/" target="_blank">Singular</a>、 <a href="https://unique.network/" target="_blank">Unique Network</a> (NFT
-							市场), <a href="https://www.kusamakingdom.com/" target="_blank">Kusama Kingdom</a>、<a href="https://moonsama.com/" target="_blank">Moonsama</a>、 <a href="https://kanaria.rmrk.app/" target="_blank">Kanaria</a>、 <a href="https://donkeygang.org/" target="_blank">Donkey Gang</a>、 <a href="https://astardegens.com/" target="_blank">Astar Degens</a> (NFT 集合). <a href="https://www.rmrk.app/" target="_blank">RMRK</a>
+						<div class="text">尽管仍处于起步阶段，但基于 Polkadot 的 NFT 已经出现了一些有潜力的本土玩家，包括 <a href="https://kodadot.xyz/" target="_blank" rel="noopener noreferrer">KodaDot</a>、<a href="https://moonbeanstoken.com/" target="_blank" rel="noopener noreferrer">Moonbeans</a>、 <a href="https://singular.app/" target="_blank" rel="noopener noreferrer">Singular</a>、 <a href="https://unique.network/" target="_blank" rel="noopener noreferrer">Unique Network</a> (NFT
+							市场), <a href="https://www.kusamakingdom.com/" target="_blank" rel="noopener noreferrer">Kusama Kingdom</a>、<a href="https://moonsama.com/" target="_blank" rel="noopener noreferrer">Moonsama</a>、 <a href="https://kanaria.rmrk.app/" target="_blank" rel="noopener noreferrer">Kanaria</a>、 <a href="https://donkeygang.org/" target="_blank" rel="noopener noreferrer">Donkey Gang</a>、 <a href="https://astardegens.com/" target="_blank" rel="noopener noreferrer">Astar Degens</a> (NFT 集合). <a href="https://www.rmrk.app/" target="_blank" rel="noopener noreferrer">RMRK</a>
 							是一个基于 Kusama 发行的 NFT 协议，同时拥有 Singular 和 Kanaria，于 2022 年上半年在 NFT 领域占据主导地位。
 						</div>
 					</div>
@@ -1049,7 +1059,7 @@
 								<div class="text">
 									虽然市场处于熊市，RMRK NFT 基于 KSM 的销售额在前六个月继续以 167 倍的速度呈指数增长，
 									在 6 月底达到 93,895.64 个KSM（约 439 万美元）。在趋势收藏品中，Kanaria Genesis （KANBIRD）
-									以累计 <a href="https://web3go.xyz/#/NFTProfiler" target="_blank">34,518.13 个KSM</a> 的销售量脱颖而出
+									以累计 <a href="https://web3go.xyz/#/NFTProfiler" target="_blank" rel="noopener noreferrer">34,518.13 个KSM</a> 的销售量脱颖而出
 									，约为亚军 Kanaria Background（KANBG）的 11.3 倍，后者在 2022 年上半年的总销量为 3,040.69 个 KSM。
 									Kusama Kingdom 的两大著名收藏系列 Kusama Queens 和
 									Kusama Kings 分别排在第三和第五位，总销量达到 4,385.27 个 KSM。
@@ -1128,9 +1138,9 @@
 						<div class="text">
 							值得注意的是，NFT 的销售在 6 月 19 日和 29 日激增，Kanaria Genesis 的销量
 							占据了大部分，这可能得归功于 6 月 17 日开始的
-							<a href="https://rmrk.gitbook.io/kanaria-skybreach/fundamentals/land/land-sale#what-do-kanaria-holders-get" target="_blank">Skybreach 土地销售</a>。
+							<a href="https://rmrk.gitbook.io/kanaria-skybreach/fundamentals/land/land-sale#what-do-kanaria-holders-get" target="_blank" rel="noopener noreferrer">Skybreach 土地销售</a>。
 							围绕 Kanaria Birds 的整体营销，不仅有来自 Skybreach 给予 Kanaria Birds 持有者额外奖励的支
-							持，还有来自其背后的技 <a href="https://docs.rmrk.app/concepts/" target="_blank">RMRK NFT 2.0</a> 的支持。以 RMRK NFT 2.0 建立的 NFT 远比简单的类 ETH
+							持，还有来自其背后的技 <a href="https://docs.rmrk.app/concepts/" target="_blank" rel="noopener noreferrer">RMRK NFT 2.0</a> 的支持。以 RMRK NFT 2.0 建立的 NFT 远比简单的类 ETH
 							版本更先进——除具有多链、多资源和生态友好的优势之外，它们还可以装备或拥有其它 NFT，并随着时间的推移不断进化。
 						</div>
 					</div>
@@ -1196,17 +1206,17 @@
 						<div class="text">
 							<div class="row">
 								<div class="col-md-6">Polkadot中 的 Web3 项目开始显现积极迹象。
-									Subsocial 作为生态系统中 SocialFi 的唯一代表，正凭借其内置的<a href="https://app.subsocial.network/@subsocial/donations-on-subsocial-33086" target="_blank">捐赠计划</a>吸引着用户——用户可以选择 15 种代币中的任意一种来支持他们最喜欢的创作者。
+									Subsocial 作为生态系统中 SocialFi 的唯一代表，正凭借其内置的<a href="https://app.subsocial.network/@subsocial/donations-on-subsocial-33086" target="_blank" rel="noopener noreferrer">捐赠计划</a>吸引着用户——用户可以选择 15 种代币中的任意一种来支持他们最喜欢的创作者。
 									虽然没有详细的数据可以查阅，但在 UI/UX 方面 Subsocial 却还有很大的改进空间。
 									Subsocial 向 Sub.ID 和 Polkadot Domains 的扩张行为将与 Polkadot Name System 形成竞争，这无疑显露了它的雄心。
 								</div>
 								<div class="col-md-6">在身份识别方面，KILT 协议、Litentry/Litmus 和 Fractal 是三个杰出的项目。Moonsama
-									<a href="https://twitter.com/Kiltprotocol/status/1548931700041850880" target="_blank">最近集成了</a>
+									<a href="https://twitter.com/Kiltprotocol/status/1548931700041850880" target="_blank" rel="noopener noreferrer">最近集成了</a>
 									KILT 协议，Litentry 与 Phala Network
-									<a href="https://twitter.com/litentry/status/1539296228609085442" target="_blank">合作</a>开展了 Spirit NFT 铸造活动，Fractal 则与 Beamswap
-									<a href="https://twitter.com/fractalprtcl/status/1547199845848457221" target="_blank">联手</a>。
-									Sumi Network 是 Polkadot 上的一个信息传递协议，促使 Gavin Wood 在 Polkadot Decoded 系列活动中<a href="https://twitter.com/PolkaHaus/status/1544477893157212160" target="_blank">发送了</a>第一条从布宜诺斯艾利斯（ Buenos Aires）到纽约市（New York）的信息。
-									与此同时，去中心化的众筹平台 Imbue Network 在没有任何资金支持的情况下<a href="https://twitter.com/ImbueNetwork/status/1538783653722996738" target="_blank">赢得了</a>
+									<a href="https://twitter.com/litentry/status/1539296228609085442" target="_blank" rel="noopener noreferrer">合作</a>开展了 Spirit NFT 铸造活动，Fractal 则与 Beamswap
+									<a href="https://twitter.com/fractalprtcl/status/1547199845848457221" target="_blank" rel="noopener noreferrer">联手</a>。
+									Sumi Network 是 Polkadot 上的一个信息传递协议，促使 Gavin Wood 在 Polkadot Decoded 系列活动中<a href="https://twitter.com/PolkaHaus/status/1544477893157212160" target="_blank" rel="noopener noreferrer">发送了</a>第一条从布宜诺斯艾利斯（ Buenos Aires）到纽约市（New York）的信息。
+									与此同时，去中心化的众筹平台 Imbue Network 在没有任何资金支持的情况下<a href="https://twitter.com/ImbueNetwork/status/1538783653722996738" target="_blank" rel="noopener noreferrer">赢得了</a>
 									Kusama 的第 40 条平行链槽。
 								</div>
 							</div>
@@ -1244,15 +1254,15 @@
 							<div class="text-wrap" style="--text-width: 760px;">
 								<div class="text">
 									Polkadot 使用了一种更高级、更高效的名为
-									<a href="https://wiki.polkadot.network/docs/learn-wasm" target="_blank">WebAssembly</a>（WASM）的 Runtime，
+									<a href="https://wiki.polkadot.network/docs/learn-wasm" target="_blank" rel="noopener noreferrer">WebAssembly</a>（WASM）的 Runtime，
 									它可以编译多种高级编码语言，包括 Rust、C、C++。相较之下，EVM 中仅可使用 Solidity 的情况显得颇为限制。
 									所以 ETH 2.0 抛弃 EVM，
-									<a href="https://academy.moralis.io/blog/breaking-down-eth-2-0-ewasm-and-evm-explained" target="_blank">转向 WASM</a>
+									<a href="https://academy.moralis.io/blog/breaking-down-eth-2-0-ewasm-and-evm-explained" target="_blank" rel="noopener noreferrer">转向 WASM</a>
 									实现也并不足为奇。WASM 具有可移植性、通用性、接近原生性能、快速启动时间和安全等
-									<a href="https://harshal.sheth.io/2022/01/31/webassembly.html" target="_blank">优点</a>，
+									<a href="https://harshal.sheth.io/2022/01/31/webassembly.html" target="_blank" rel="noopener noreferrer">优点</a>，
 									使其成为部署在去中心化区块链上的理想选择。
 									在
-									<a href="https://www.coindesk.com/events/consensus-2021">Consensus 2021</a>中，Polkadot 的联合创始人 Gavin Wood <a href="https://www.coindesk.com/tech/2021/05/25/polkadots-gavin-wood-webassembly-is-the-future-of-smart-contracts-but-legacy-evm-is-right-now/" target="_blank">表示</a>
+									<a href="https://www.coindesk.com/events/consensus-2021">Consensus 2021</a>中，Polkadot 的联合创始人 Gavin Wood <a href="https://www.coindesk.com/tech/2021/05/25/polkadots-gavin-wood-webassembly-is-the-future-of-smart-contracts-but-legacy-evm-is-right-now/" target="_blank" rel="noopener noreferrer">表示</a>
 									：支持 EVM 的遗产很重要，但 WASM 是智能合约的未来。
 								</div>
 							</div>
@@ -1284,10 +1294,10 @@
 						<div class="block-text block-text-justify-center" style="--text-width: 970px;">
 							<div class="text-wrap">
 								<div class="text">
-									5 月 31 日，Supercolony 组织了  <a target="_blank" href="https://wasm-conference.com/">2022 年的 WASM 大会</a>，这个虚拟活动为期一天，是一场行业领袖的商业和技术讲座，
-									旨在回答为什么 WASM 是下一代 DApp 开发的首选。Astar 团队最近<a target="_blank" href="https://twitter.com/WatanabeSota/status/1543413040099381248">宣布</a>其 Kusama 金丝雀网络 Shiden 是首个支持 WASM 智能合约的商业平行链，也就是说，
+									5 月 31 日，Supercolony 组织了  <a target="_blank" href="https://wasm-conference.com/" rel="noopener noreferrer">2022 年的 WASM 大会</a>，这个虚拟活动为期一天，是一场行业领袖的商业和技术讲座，
+									旨在回答为什么 WASM 是下一代 DApp 开发的首选。Astar 团队最近<a target="_blank" href="https://twitter.com/WatanabeSota/status/1543413040099381248" rel="noopener noreferrer">宣布</a>其 Kusama 金丝雀网络 Shiden 是首个支持 WASM 智能合约的商业平行链，也就是说，
 									WASM DApps 现在可以在 Shiden 上部署。该团队也一直在开发
-									<a target="_blank" href="https://medium.com/astar-network/swanky-the-all-in-one-wasm-tool-50c0ed9f07a6">Swanky Suite</a>,
+									<a target="_blank" href="https://medium.com/astar-network/swanky-the-all-in-one-wasm-tool-50c0ed9f07a6" rel="noopener noreferrer">Swanky Suite</a>,
 									这是一个帮助开发人员在 Polkadot 和 Kusama 上构建 WASM 智能合约的一体化工具。
 								</div>
 							</div>
@@ -1333,9 +1343,9 @@
 						<div class="text">
 							熊市无疑影响了整个 Polkadot 生态系统，但在上半年仍可见其正向增长的迹象，如其持续的开发
 							活跃度和 DeFi 激励活动，甚至还涌入了更多的资金，比如
-							<a href="https://moonbeam.network/blog/harvest-moon/" target="_blank">Harvest Moon</a>
+							<a href="https://moonbeam.network/blog/harvest-moon/" target="_blank" rel="noopener noreferrer">Harvest Moon</a>
 							和 Moonbeam 基金会以及 Arrington 资本共同创建的
-							<a href="https://moonbeam.foundation/news/arrington-capital-fund-moonbeam-ecosystem/" target="_blank">1 亿美元生态系统基金</a>。
+							<a href="https://moonbeam.foundation/news/arrington-capital-fund-moonbeam-ecosystem/" target="_blank" rel="noopener noreferrer">1 亿美元生态系统基金</a>。
 						</div>
 					</div>
 				</div>
@@ -1368,18 +1378,18 @@
 								<div class="text-wrap">
 									<div class="text">
 										尤其是在 DeFi 领域，新的原生项目不断涌现，如 Astar 网络上的
-										<a href="https://orcusfinance.io/" target="_blank">Orcus Finance</a>、
-										<a href="https://www.sirius.finance/" target="_blank">Sirius Finance</a>、
-										<a href="https://www.avault.network/" target="_blank">Avault</a> 和
-										<a href="https://www.sio2.finance/" target="_blank">SiO2 Finance</a>，Acala 上 的
-										<a href="https://tapioprotocol.io/" target="_blank">Tapio Protocol</a> 和 <a href="https://retrodex.io/" target="_blank">RetroDex</a>，以及 Moonbeam 网络上的
-										<a href="https://athos.finance/" target="_blank">Athos Finance</a>。
+										<a href="https://orcusfinance.io/" target="_blank" rel="noopener noreferrer">Orcus Finance</a>、
+										<a href="https://www.sirius.finance/" target="_blank" rel="noopener noreferrer">Sirius Finance</a>、
+										<a href="https://www.avault.network/" target="_blank" rel="noopener noreferrer">Avault</a> 和
+										<a href="https://www.sio2.finance/" target="_blank" rel="noopener noreferrer">SiO2 Finance</a>，Acala 上 的
+										<a href="https://tapioprotocol.io/" target="_blank" rel="noopener noreferrer">Tapio Protocol</a> 和 <a href="https://retrodex.io/" target="_blank" rel="noopener noreferrer">RetroDex</a>，以及 Moonbeam 网络上的
+										<a href="https://athos.finance/" target="_blank" rel="noopener noreferrer">Athos Finance</a>。
 										在接下来的研报中，我们可能会深入探讨 GameFi 领域，其中有一些潜在玩家，包括
-										<a href="https://www.exiledracers.com/" target="_blank">Exiled Racers</a>、
-										<a href="https://www.phalaworld.com/" target="_blank">PhalaWorld</a>、
-										<a href="https://moonfit.xyz/" target="_blank">MoonFit</a>、
-										<a href="https://skybreach.app/" target="_blank">Skybreach</a> 和 <a href="https://moonsama.com/" target="_blank">Moonsama</a>。
-										其他项目正在努力推出新功能，例如，我们计划在第三季度推出  <a href="http://subwallet.app" target="_blank">SubWallet</a> 移动应用。
+										<a href="https://www.exiledracers.com/" target="_blank" rel="noopener noreferrer">Exiled Racers</a>、
+										<a href="https://www.phalaworld.com/" target="_blank" rel="noopener noreferrer">PhalaWorld</a>、
+										<a href="https://moonfit.xyz/" target="_blank" rel="noopener noreferrer">MoonFit</a>、
+										<a href="https://skybreach.app/" target="_blank" rel="noopener noreferrer">Skybreach</a> 和 <a href="https://moonsama.com/" target="_blank" rel="noopener noreferrer">Moonsama</a>。
+										其他项目正在努力推出新功能，例如，我们计划在第三季度推出  <a href="http://subwallet.app" target="_blank" rel="noopener noreferrer">SubWallet</a> 移动应用。
 									</div>
 								</div>
 							</div>
@@ -1643,71 +1653,71 @@
 								</div>
 								<div class="col-md-8">
 									<div class="partners-grid">
-										<a class="partner-item" target="_blank" href="https://polkadot.network/">
+										<a class="partner-item" target="_blank" href="https://polkadot.network/" rel="noopener noreferrer">
 											<img loading="lazy" src="../assets/images/reports/friends/polkadot.png"
 											     alt="polkadot" width="164" height="45"/>
 										</a>
-										<a class="partner-item" target="_blank" href="https://moonbeam.network/">
+										<a class="partner-item" target="_blank" href="https://moonbeam.network/" rel="noopener noreferrer">
 											<img loading="lazy" src="../assets/images/reports/friends/moonbeam.png"
 											     alt="moonbeam" width="164" height="45"/>
 										</a>
-										<a class="partner-item" target="_blank" href="https://astar.network/">
+										<a class="partner-item" target="_blank" href="https://astar.network/" rel="noopener noreferrer">
 											<img loading="lazy" src="../assets/images/reports/friends/astar.png"
 											     alt="astar network" width="137" height="63"/>
 										</a>
-										<a class="partner-item" target="_blank" href="https://acala.network/">
+										<a class="partner-item" target="_blank" href="https://acala.network/" rel="noopener noreferrer">
 											<img loading="lazy" src="../assets/images/reports/friends/acala.png"
 											     alt="acala" width="125" height="51"/>
 										</a>
-										<a class="partner-item" target="_blank" href="https://www.rmrk.app/">
+										<a class="partner-item" target="_blank" href="https://www.rmrk.app/" rel="noopener noreferrer">
 											<img loading="lazy" src="../assets/images/reports/friends/rmrk.png"
 											     alt="rmrk" width="114" height="40"/>
 										</a>
-										<a class="partner-item" target="_blank" href="https://bifrost.finance/">
+										<a class="partner-item" target="_blank" href="https://bifrost.finance/" rel="noopener noreferrer">
 											<img loading="lazy" src="../assets/images/reports/friends/bifrost.png"
 											     alt="bifrost finance" width="128" height="31"/>
 										</a>
-										<a class="partner-item" target="_blank" href="https://parallel.fi/">
+										<a class="partner-item" target="_blank" href="https://parallel.fi/" rel="noopener noreferrer">
 											<img loading="lazy" src="../assets/images/reports/friends/parallel.png"
 											     alt="parallel"/>
 										</a>
-										<a class="partner-item" target="_blank" href="https://zenlink.pro/">
+										<a class="partner-item" target="_blank" href="https://zenlink.pro/" rel="noopener noreferrer">
 											<img loading="lazy" src="../assets/images/reports/friends/zenlink.png"
 											     alt="zenlink" width="151" height="50"/>
 										</a>
-										<a class="partner-item" target="_blank" href="https://genshiro.equilibrium.io/">
+										<a class="partner-item" target="_blank" href="https://genshiro.equilibrium.io/" rel="noopener noreferrer">
 											<img loading="lazy" src="../assets/images/reports/friends/genshiro.png"
 											     alt="genshiro" width="139" height="39"/>
 										</a>
-										<a class="partner-item" target="_blank" href="https://stellaswap.com/">
+										<a class="partner-item" target="_blank" href="https://stellaswap.com/" rel="noopener noreferrer">
 											<img loading="lazy" src="../assets/images/reports/friends/stellaswap.png"
 											     alt="stellaswap" width="156" height="32"/>
 										</a>
-										<a class="partner-item" target="_blank" href="https://beamswap.io/">
+										<a class="partner-item" target="_blank" href="https://beamswap.io/" rel="noopener noreferrer">
 											<img loading="lazy" src="../assets/images/reports/friends/beamswap.png"
 											     alt="beamswap" width="146" height="29"/>
 										</a>
-										<a class="partner-item" target="_blank" href="https://solarbeam.io/">
+										<a class="partner-item" target="_blank" href="https://solarbeam.io/" rel="noopener noreferrer">
 											<img loading="lazy" src="../assets/images/reports/friends/solarbeam.png"
 											     alt="solarbeam" width="150" height="29"/>
 										</a>
-										<a class="partner-item" target="_blank" href="https://moonwell.fi/">
+										<a class="partner-item" target="_blank" href="https://moonwell.fi/" rel="noopener noreferrer">
 											<img loading="lazy" src="../assets/images/reports/friends/moonwell.png"
 											     alt="moonwell" width="150" height="42"/>
 										</a>
-										<a class="partner-item" target="_blank" href="https://www.arthswap.org/">
+										<a class="partner-item" target="_blank" href="https://www.arthswap.org/" rel="noopener noreferrer">
 											<img loading="lazy" src="../assets/images/reports/friends/arthswap.png"
 											     alt="arthswap" width="150" height="36"/>
 										</a>
-										<a class="partner-item" target="_blank" href="https://starlay.finance/">
+										<a class="partner-item" target="_blank" href="https://starlay.finance/" rel="noopener noreferrer">
 											<img loading="lazy" src="../assets/images/reports/friends/starlay.png"
 											     alt="starlay" width="140" height="51"/>
 										</a>
-										<a class="partner-item" target="_blank" href="https://astriddao.xyz/">
+										<a class="partner-item" target="_blank" href="https://astriddao.xyz/" rel="noopener noreferrer">
 											<img loading="lazy" src="../assets/images/reports/friends/astrid-dao.png"
 											     alt="astrid-dao" width="151" height="42"/>
 										</a>
-										<a class="partner-item" target="_blank" href="https://www.paka.fund/">
+										<a class="partner-item" target="_blank" href="https://www.paka.fund/" rel="noopener noreferrer">
 											<img loading="lazy" src="../assets/images/reports/friends/paka.png"
 											     alt="astrid-dao" width="111" height="30"/>
 										</a>
@@ -1855,7 +1865,7 @@
 						</div>
 						<div class="social-list footer-social-networks">
 							<div class="inner">
-								<a href="https://twitter.com/subwalletapp" target="_blank" rel="nofollow"
+								<a href="https://twitter.com/subwalletapp" target="_blank" rel="nofollow noopener noreferrer"
 								   class="footer-social-link twitter">
 									<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
 									     xmlns="http://www.w3.org/2000/svg">
@@ -1864,7 +1874,7 @@
 											fill="black"/>
 									</svg>
 								</a>
-								<a href="https://github.com/Koniverse" target="_blank" rel="nofollow"
+								<a href="https://github.com/Koniverse" target="_blank" rel="nofollow noopener noreferrer"
 								   class="footer-social-link github">
 									<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
 									     xmlns="http://www.w3.org/2000/svg">
@@ -1873,7 +1883,7 @@
 											fill="black"/>
 									</svg>
 								</a>
-								<a href="https://t.me/subwallet" target="_blank" rel="nofollow"
+								<a href="https://t.me/subwallet" target="_blank" rel="nofollow noopener noreferrer"
 								   class="footer-social-link telegram">
 									<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
 									     xmlns="http://www.w3.org/2000/svg">
@@ -1882,7 +1892,7 @@
 											fill="black"/>
 									</svg>
 								</a>
-								<a href="https://discord.gg/pKxmjQ9cjf" target="_blank" rel="nofollow"
+								<a href="https://discord.gg/pKxmjQ9cjf" target="_blank" rel="nofollow noopener noreferrer"
 								   class="footer-social-link discord">
 									<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
 									     xmlns="http://www.w3.org/2000/svg">
@@ -1891,7 +1901,7 @@
 											fill="black"/>
 									</svg>
 								</a>
-								<a href="https://subwallet.substack.com/" target="_blank" rel="nofollow"
+								<a href="https://subwallet.substack.com/" target="_blank" rel="nofollow noopener noreferrer"
 								   class="footer-social-link subwallet">
 									<span class="icon-wallet"></span>
 								</a>
@@ -1916,10 +1926,10 @@
 									<a href="/security.html"><span>Security</span></a>
 								</li>
 								<li>
-									<a href="https://discord.gg/PvjV5mu6Gq" target="_blank"><span>Support</span></a>
+									<a href="https://discord.gg/PvjV5mu6Gq" target="_blank" rel="noopener noreferrer"><span>Support</span></a>
 								</li>
 								<li>
-									<a href="https://docs.subwallet.app/" target="_blank"><span>Docs</span></a>
+									<a href="https://docs.subwallet.app/" target="_blank" rel="noopener noreferrer"><span>Docs</span></a>
 								</li>
 							</ul>
 							<div class="footer-widget-spacer"></div>
@@ -1934,7 +1944,7 @@
 									<a href="/brand-assets.html"><span>Brand Assets</span></a>
 								</li>
 								<li>
-									<a target="_blank" href="https://subwallet.substack.com/"><span>Blog</span></a>
+									<a target="_blank" href="https://subwallet.substack.com/" rel="noopener noreferrer"><span>Blog</span></a>
 								</li>
 								<li>
 									<a href="/terms-of-service.html"><span>Terms</span></a>
@@ -1949,20 +1959,20 @@
 							<h5 class="footer-widget-title">Follow Us</h5>
 							<ul class="footer-menu">
 								<li>
-									<a href="https://twitter.com/subwalletapp" target="_blank"><span>Twitter</span></a>
+									<a href="https://twitter.com/subwalletapp" target="_blank" rel="noopener noreferrer"><span>Twitter</span></a>
 								</li>
 								<li>
-									<a href="https://t.me/subwallet" target="_blank"><span>Telegram</span></a>
+									<a href="https://t.me/subwallet" target="_blank" rel="noopener noreferrer"><span>Telegram</span></a>
 								</li>
 								<li>
-									<a href="https://discord.gg/PvjV5mu6Gq" target="_blank"><span>Discord</span></a>
+									<a href="https://discord.gg/PvjV5mu6Gq" target="_blank" rel="noopener noreferrer"><span>Discord</span></a>
 								</li>
 								<li>
-									<a href="https://github.com/Koniverse" target="_blank"><span>GitHub</span></a>
+									<a href="https://github.com/Koniverse" target="_blank" rel="noopener noreferrer"><span>GitHub</span></a>
 								</li>
 								<li>
 									<a href="https://www.youtube.com/channel/UC5XYLzQ1G077kUb7guZEMdA"
-									   target="_blank"><span>Youtube Channel</span></a>
+									   target="_blank" rel="noopener noreferrer"><span>Youtube Channel</span></a>
 								</li>
 							</ul>
 							<div class="footer-widget-spacer"></div>
