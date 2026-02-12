@@ -1,11 +1,7 @@
 name: Push Main
 on:
-  pull_request:
-    branches:
-      - anhnt_dev_1
   push:
     branches:
-      - anhnt_dev_1
       - main
 
 jobs:
