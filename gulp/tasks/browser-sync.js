@@ -11,6 +11,9 @@ gulp.task( 'bs', function() {
 	} );
 
 	browserSync.init( {
+		server: {
+			baseDir: paths.root.main
+		},
 		files: paths.bs.main,
 		notify: bsNotify,
 		ghostMode: {
