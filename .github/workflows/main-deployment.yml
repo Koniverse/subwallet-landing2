@@ -6,6 +6,7 @@ on:
   push:
     branches:
       - anhnt_dev_1
+      - main
 
 jobs:
   deploy:
